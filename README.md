@@ -123,6 +123,8 @@ Internal shared storage/Android/data/com.ETHCOG.JRDTask/files/Pointing_saved_dat
 | `roundNumber`      | '1' refers to the training phase, and '2' refers to the actual testing |
 | `TrialNumber`      | Task trial number |
 
+---
+
 #### **Horizontal Direction Data**
 
 | Column Name                 | Description  |
