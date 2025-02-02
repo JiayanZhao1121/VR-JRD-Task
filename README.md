@@ -4,6 +4,14 @@
 
 The **VR-JRD Task** is a Unity-based VR tool designed for assessing object-based spatial memory in 3D volumentric or multilayer environments. This project enables researchers to assess direction estimation (judgment of relative direction) in both horizontal and vertical dimensions. 
 
+This VR tool is part of a publication.
+
+https://...
+
+If you find it useful for your research please cite:
+
+Zhao, J., Vater, C., Abati, C., Mavros, P., & Hölscher, C. (under review) Pointing in 3D: Validating the virtual reality judgments of relative direction task for assessing spatial memory in multilevel virtual buildings. Submitted to *Spatial Cognition & Computation*.
+
 ---
 
 ## Prerequisites
@@ -107,25 +115,24 @@ Internal shared storage/Android/data/com.ETHCOG.JRDTask/files/Pointing_saved_dat
 #### **Basic Data**
 | Column Name                 | Description  |
 |-----------------------------|-------------|
-| `participant`      | Participant ID *(entered by the subject at the beginning of the VR experience)* |
+| `participant`      | Participant ID *(entered by subject at the beginning of the VR experience)* |
 | `standingLandmark` | Imagined standing object |
 | `facingLandmark`   | Imagined facing object |
-| `facingLandmark`   | Imagined facing object |
 | `targetLandmark`   | Target (pointing) object |
-| `latency`          | Time spent (seconds) pointing to the target |
-| `roundNumber`      | 1 = training, 2 = actual testing |
+| `latency`          | Time spent (seconds) pointing at the target |
+| `roundNumber`      | '1' refers to the training phase, and '2' refers to the actual testing |
 | `TrialNumber`      | Task trial number |
 
 #### **Horizontal Direction Data**
 
 | Column Name                 | Description  |
 |-----------------------------|-------------|
-| `horizontalTargetAngle`      | World direction of the target object in relation to the subject *(Unity world z-positive is 0°, clockwise to 360°)*. |
-| `horizontalJRDFacingAngle`   | World direction of the facing object in relation to the subject in the task trial *(Unity world z-positive is 0°, clockwise to 360°)*. |
-| `horizontalJRDCorrectAngle`  | World direction of the target object in relation to the subject in the task trial *(Unity world z-positive is 0°, clockwise to 360°)*. |
-| `horizontalPointingAngle`    | World pointing direction of the subject *(Unity world z-positive is 0°, clockwise to 360°)*. |
-| `horizontalPointingError`    | World pointing error *(Unity world z-positive is 0°, clockwise to 360°)*. |
-| `horizontalAbsPointingError` | Absolute pointing error *(Range: 0° - 180°)*. |
+| `horizontalTargetAngle`      | Horizontal direction of the target object in the Unity environment relative to the subject *(where the Unity world Z-positive axis is defined as 0°, with angles increasing clockwise up to 360°)* |
+| `horizontalJRDFacingAngle`   | Horizontal direction of the imagined facing object, as specified by the task trial instruction, relative to the subject *(where the Unity world Z-positive axis is defined as 0°, with angles increasing clockwise up to 360°)*  |
+| `horizontalJRDCorrectAngle`  | Horizontal direction of the target (pointing) object, as transformed according to the task trial instruction, relative to the subject *(where the Unity world Z-positive axis is defined as 0°, with angles increasing clockwise up to 360°)* |
+| `horizontalPointingAngle`    | Horizontal pointing direction of the subject *(where the Unity world Z-positive axis is defined as 0°, with angles increasing clockwise up to 360°)* |
+| `horizontalPointingError`    | Signed horizontal pointing error *(with angles increasing clockwise up to 360°)*. |
+| `horizontalAbsPointingError` | Absolute horizontal pointing error *(0° - 180°)*. |
 
 ---
 
@@ -133,11 +140,9 @@ Internal shared storage/Android/data/com.ETHCOG.JRDTask/files/Pointing_saved_dat
 
 | Column Name                 | Description  |
 |-----------------------------|-------------|
-| `verticalTargetAngle`        | World direction of the target in relation to the subject in the task trial *(Range: 0° - 90° upward, 0° - -90° downward)*. |
-| `verticalPointingAngle`      | World pointing direction in the task trial *(Range: 0° - 90° upward, 0° - -90° downward)*. |
-| `verticalPointingError`      | World pointing error *(Range: 0° - 90° upward, 0° - -90° downward)*. |
-| `verticalAbsPointingError`   | Absolute pointing error *(Range: 0° - 90°)*. |
+| `verticalTargetAngle`        | Vertical direction of the imagined facing object, as specified by the task trial instruction, relative to the subject *(with the range 0° to 90° for upward directions and 0° to -90° for downward directions)* |
+| `verticalPointingAngle`      | Vertical pointing direction of the subject *(with the range 0° to 90° for upward directions and 0° to -90° for downward directions)* |
+| `verticalPointingError`      | Signed vertical pointing error *(with the range 0° to 180° for upward angular deviations and 0° to --180° for downward angular deviations)* |
+| `verticalAbsPointingError`   | Absolute vertical pointing error *(0° - 90°)*. |
 
-## Reference
-Cite my paper
 
