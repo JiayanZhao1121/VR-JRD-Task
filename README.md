@@ -6,8 +6,6 @@ The **VR-JRD Task** is a Unity-based VR tool designed for assessing object-based
 
 This VR tool is part of a publication.
 
-https://doi.org/10.1080/13875868.2025.2601914
-
 If you find it useful for your research please cite:
 
 Zhao, J., Vater, C., Abati, C., Mavros, P., & Hölscher, C. (2026). Pointing in 3D: validating the virtual reality judgments of relative direction task for assessing spatial memory in multilevel virtual buildings. Spatial Cognition & Computation, 26(1), 38–73. https://doi.org/10.1080/13875868.2025.2601914
